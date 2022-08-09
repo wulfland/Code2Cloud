@@ -41,7 +41,7 @@ runs:
   
 </details>
 
-3. Commit the file (`[skip ci]` to nit run a build, yet).
+3. Commit the file (add `[skip ci]` to the commit message body to not run a build, yet).
 4. Inside the `hello-world-docker-action` folder create the `Dockerfile`. The container inherits `FROM` `alpine:3.10` and 
    should copy and execute a file `entrypoint.sh`.
 
@@ -60,7 +60,7 @@ ENTRYPOINT ["/entrypoint.sh"]
   
 </details>
 
-5. Commit the file (`[skip ci]` to skip running a build, for now).
+5. Commit the file (add `[skip ci]` to the commit message body to not run a build, yet).
 6. Create the file `entrypoint.sh` in the folder. It is a simple bash script that writes a message to the console and sets the output parameter.
 
 <details>
@@ -76,7 +76,7 @@ echo "::set-output name=time::$(date)"
   
 </details>
 
-7. Commit the file (`[skip ci]` to nit run a build, yet).
+7. Commit the file (add `[skip ci]` to the commit message body to not run a build, yet).
 
 ## Testing the action
 
