@@ -1,6 +1,6 @@
 # GitHub Bootcamp - Workshop
 
-Repo for the `GitHub Bootcamp` 1-day Workshop from @wulfland.
+Repo for the `GitHub Code2Cloud Bootcamp` 1/2-day Workshop from @wulfland.
 
 ## 👉 Introduction
 
