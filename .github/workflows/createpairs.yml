@@ -1,0 +1,27 @@
+name: Add comments with pairs
+
+on:  # yamllint disable-line rule:truthy
+  issues:
+    types:
+      - "labeled"
+  workflow_dispatch:
+    inputs:
+      issue_number:
+        description: "Github Issue # to use"
+        required: true
+        type: string
+jobs:
+  make-pairs:
+    # yamllint disable-line rule:line-length
+    if: github.event.label.name == 'ready-for-automation'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read  # allows checkout to read repo
+      issues: write   # allows reading and writing to issues
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/github-script@v6
+        with:
+          script: |
+            const script = require('.github/workflows/scripts/create-pairs.js')
+            await script({github, context, core})
