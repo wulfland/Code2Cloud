@@ -127,7 +127,7 @@ In this hands-on lab you will practice to work with GitHub Issues, Discussions, 
     
     9. Verify your issue template and create a bug and an issue from the custom template
 
-## Participating in Discussions
+## Optional: Participating in Discussions
 
 1. Ask a question in discussions and answer it (mark it as answered)
 2. Create a poll 
@@ -135,7 +135,7 @@ In this hands-on lab you will practice to work with GitHub Issues, Discussions, 
 4. Pin the question and the announcement to discussion
 5. See [here](https://github.com/wulfland/AccelerateDevOps/discussions) for ideas
 
-## Rendering markdonw as HTML with GitHub Pages
+## Optional: Rendering markdonw as HTML with GitHub Pages
 
 1. Create a markdown file `index.md` hand add metadata `layout: home` amd some sample markdown 
 
